@@ -1,0 +1,23 @@
+{
+  "manifest_version": 3,
+  "name": "You Got a Typo!",
+  "version": "1.0",
+  "description": "Typosquatted URL Detection",
+  "permissions": [
+    "activeTab",
+    "storage"
+  ],
+  "action": {
+    "default_icon": "icon.png",
+    "default_popup": "popup.html"
+  },
+  "icons": {
+    "48": "icon.png"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["popup.js"]
+    }
+  ]
+}

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Typosquat Checker</title>
+  <style>
+    body {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      margin: 0;
+    }
+
+    button {
+      width: 120px;
+      height: 36px;
+      border-radius: 18px; /* half of the height */
+      background-color: #4285f4; /* Google's blue background color */
+      color: #ffffff; /* white text color */
+      font-size: 16px;
+      cursor: pointer;
+      border: none; /* remove border */
+      outline: none; /* remove default outline */
+      transition: background-color 0.3s ease; /* smooth color transition on hover */
+    }
+
+    button:hover {
+      background-color: #3c77e4; /* slightly darker blue on hover */
+    }
+  </style>
+</head>
+<body>
+  <button id="checkButton">Typo</button>
+  <script src="popup.js"></script>
+</body>
+</html>
+
