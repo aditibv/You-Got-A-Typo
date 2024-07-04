@@ -28,38 +28,43 @@ The SVM model achieved high accuracy in detecting typo-squatted domains. The per
 
 Future improvements could include implementing multimodal analysis that uses both the URL and web page content to detect typo-squatting. Additionally, integrating the extension with organizational security products like Intrusion Detection Systems (IDS) and Firewalls could enhance threat detection and response.
 
-## Installation
+## Usage
 
-1. Clone the repository:
-
-```bash
-git clone https://github.com/aditibv/you-got-a-typo.git
-cd you-got-a-typo
-
-Train the model (if not already trained):
-bash
-Copy code
-python train_model.py
-Run the Flask server:
-bash
-Copy code
-python backend.py
-Load the Chrome extension:
-Open Chrome and navigate to chrome://extensions/.
-Enable "Developer mode".
-Click "Load unpacked" and select the chrome_extension directory.
-Usage
 Enter a URL in the Chrome extension's input field. The extension will check the URL and alert you if it detects a typo-squatting domain.
 
-Contributing
+## Contributing
+
 Contributions are welcome! Please fork the repository and create a pull request with your changes.
 
-License
+## License
+
 This project is licensed under the MIT License.
 
-Acknowledgements
-DNS Twist for generating typo-squatted domain names.
-Similarweb for providing legitimate domain data.
-University of Guelph for supporting this research project.
-Contact
+## Acknowledgements
+
+- [DNS Twist](https://github.com/elceef/dnstwist) for generating typo-squatted domain names.
+- [Similarweb](https://www.similarweb.com/) for providing legitimate domain data.
+- University of Guelph for supporting this research project.
+
+## Contact
+
 For any questions or suggestions, please open an issue on GitHub or contact the project maintainers.
+
+## Steps to Run the Project
+
+1. **Train the model (if not already trained):**
+
+    ```bash
+    python train_model.py
+    ```
+
+2. **Run the Flask server:**
+
+    ```bash
+    python backend.py
+    ```
+
+3. **Load the Chrome extension:**
+   - Open Chrome and navigate to `chrome://extensions/`.
+   - Enable "Developer mode".
+   - Click "Load unpacked" and select the `chrome_extension` directory.
